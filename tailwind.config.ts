@@ -63,12 +63,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				wrlds: {
-					teal: '#9F9EA1',
-					dark: '#3F3F3F',
-					light: '#F6F6F7',
-					accent: '#C8C8C9',
-					muted: '#F1F1F1'
+				ktl: {
+					red: '#8B0000',
+					teal: '#0EA5A5',
+					text: '#222222',
+					background: '#FFFFFF',
+					muted: '#666666'
 				}
 			},
 			borderRadius: {

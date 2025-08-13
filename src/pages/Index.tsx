@@ -1,10 +1,10 @@
 
 import PageLayout from '@/components/PageLayout';
 import Hero from '@/components/Hero';
-import Features from '@/components/Features';
-import Projects from '@/components/Projects';
-import WhyWrlds from '@/components/WhyWrlds';
-import BlogPreview from '@/components/BlogPreview';
+import KTLAbout from '@/components/KTLAbout';
+import KTLSustainability from '@/components/KTLSustainability';
+import KTLCertifications from '@/components/KTLCertifications';
+import KTLClients from '@/components/KTLClients';
 import SEO from '@/components/SEO';
 import { useEffect } from 'react';
 
@@ -21,16 +21,16 @@ const Index = () => {
   return (
     <PageLayout>
       <SEO 
-        title="WRLDS - Smart Textile Technology" 
-        description="WRLDS Technologies: Pioneering smart engineering solutions with textile sensors for sports, safety, and performance monitoring."
+        title="Kattali Textile Ltd. - Bangladesh Apparel Manufacturer (ISO 9001, CTPAT)" 
+        description="KTL runs 12 production lines and 850+ staff producing knit & woven garments for North America. Careers and investor information inside."
         imageUrl="/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png"
-        keywords={['smart textiles', 'wearable technology', 'textile sensors', 'sports tech', 'safety monitoring', 'performance analytics', 'manufacturing']}
+        keywords={['Bangladesh apparel manufacturing', 'textile manufacturer', 'garment production', 'ISO 9001', 'CTPAT', 'knit woven production', 'North America export', 'textile careers', 'apparel investment']}
       />
       <Hero />
-      <Features />
-      <WhyWrlds />
-      <Projects />
-      <BlogPreview />
+      <KTLAbout />
+      <KTLSustainability />
+      <KTLCertifications />
+      <KTLClients />
     </PageLayout>
   );
 };
