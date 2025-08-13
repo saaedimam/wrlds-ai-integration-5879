@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,35 +7,63 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 13%;
+    /* Primary Colors */
+    --background: 0 0% 99%; /* #FCFCFD - Off-white */
+    --foreground: 215 25% 17%; /* #1E293B - Dark blue-gray */
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 13%;
+    --card: 210 40% 97%; /* #F8FAFC - Light gray */
+    --card-foreground: 215 25% 17%; /* #1E293B - Dark blue-gray */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 13%;
+    --popover: 210 40% 97%; /* #F8FAFC - Light gray */
+    --popover-foreground: 215 25% 17%; /* #1E293B - Dark blue-gray */
 
-    --primary: 0 100% 27%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 100% 27%; /* #8B0000 - Dark red */
+    --primary-foreground: 0 0% 99%; /* #FCFCFD - Off-white */
 
-    --secondary: 180 59% 35%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 45 96% 64%; /* #FFB703 - Secondary Yellow */
+    --secondary-foreground: 215 25% 17%; /* #1E293B - Dark blue-gray */
 
-    --muted: 0 0% 95%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 220 13% 91%; /* #E2E8F0 - Light gray border */
+    --muted-foreground: 215 16% 47%; /* #64748B - Medium gray */
 
-    --accent: 180 59% 35%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 178 84% 35%; /* #0EA5A5 - Accent Teal */
+    --accent-foreground: 0 0% 99%; /* #FCFCFD - Off-white */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 348 83% 47%; /* #F43F5E - Rose */
+    --destructive-foreground: 0 0% 99%; /* #FCFCFD - Off-white */
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 50%;
+    --border: 220 13% 91%; /* #E2E8F0 - Light gray border */
+    --input: 220 13% 91%; /* #E2E8F0 - Light gray border */
+    --ring: 0 100% 27%; /* #8B0000 - Dark red */
 
     --radius: 0.5rem;
+    
+    /* Supporting Colors */
+    --rose: 348 83% 47%; /* #F43F5E - Rose */
+    --teal: 162 78% 46%; /* #14B8A6 - Teal */
+    --amber: 32 95% 44%; /* #F59E0B - Amber */
+  }
+
+  .dark {
+    --background: 215 25% 17%; /* #1E293B - Dark blue-gray */
+    --foreground: 0 0% 99%; /* #FCFCFD - Off-white */
+    --card: 215 25% 17%; /* #1E293B - Dark blue-gray */
+    --card-foreground: 0 0% 99%; /* #FCFCFD - Off-white */
+    --popover: 215 25% 17%; /* #1E293B - Dark blue-gray */
+    --popover-foreground: 0 0% 99%; /* #FCFCFD - Off-white */
+    --primary: 0 100% 27%; /* #8B0000 - Dark red */
+    --primary-foreground: 0 0% 99%; /* #FCFCFD - Off-white */
+    --secondary: 45 96% 64%; /* #FFB703 - Secondary Yellow */
+    --secondary-foreground: 215 25% 17%; /* #1E293B - Dark blue-gray */
+    --muted: 215 16% 47%; /* #64748B - Medium gray */
+    --muted-foreground: 220 13% 91%; /* #E2E8F0 - Light gray border */
+    --accent: 178 84% 35%; /* #0EA5A5 - Accent Teal */
+    --accent-foreground: 0 0% 99%; /* #FCFCFD - Off-white */
+    --destructive: 348 83% 47%; /* #F43F5E - Rose */
+    --destructive-foreground: 0 0% 99%; /* #FCFCFD - Off-white */
+    --border: 215 16% 47%; /* #64748B - Medium gray */
+    --input: 215 16% 47%; /* #64748B - Medium gray */
+    --ring: 0 100% 27%; /* #8B0000 - Dark red */
   }
 }
 
@@ -51,17 +79,24 @@
   }
 
   body {
-    @apply bg-white text-foreground;
-    font-family: 'Space Grotesk', sans-serif;
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 
-  /* KTL Brand Colors */
+  /* KTL Brand Colors - Updated Palette */
   :root {
-    --brand-red: #8B0000;
-    --brand-accent: #0EA5A5;
-    --text: #222;
-    --muted: #666;
-    --bg: #fff;
+    --brand-red: #8B0000; /* Primary Red */
+    --brand-accent: #0EA5A5; /* Accent Teal */
+    --brand-yellow: #FFB703; /* Secondary Yellow */
+    --brand-rose: #F43F5E; /* Rose */
+    --brand-teal: #14B8A6; /* Teal */
+    --brand-amber: #F59E0B; /* Amber */
+    --text: #1E293B; /* Dark blue-gray */
+    --muted: #64748B; /* Medium gray */
+    --bg: #FCFCFD; /* Off-white */
+    --paper: #F8FAFC; /* Light gray */
+    --border-color: #E2E8F0; /* Light gray border */
   }
 
   a {
@@ -70,41 +105,46 @@
 
   .btn-primary, .button-primary {
     background: var(--brand-red);
-    color: #fff;
+    color: #FCFCFD; /* Off-white text */
+    border: 1px solid var(--brand-red);
+    transition: all 0.3s ease;
   }
 
   .btn-primary:hover, .button-primary:hover {
-    opacity: 0.92;
+    background: #6B0000; /* Darker red on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(139, 0, 0, 0.3);
   }
 
   .tag, .pill {
-    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
-    color: var(--text);
+    background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
+    color: #1E293B; /* Dark blue-gray text */
     border-radius: 8px;
     padding: 0.5rem 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(226, 232, 240, 0.5);
+    box-shadow: 0 2px 8px rgba(30, 41, 59, 0.05);
+    border: 1px solid #E2E8F0; /* Light gray border */
   }
   
-  /* Modern card styles */
+  /* Modern card styles with new palette */
   .modern-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(248, 250, 252, 0.95); /* #F8FAFC - Light gray */
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid #E2E8F0; /* Light gray border */
     border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(30, 41, 59, 0.1); /* Dark blue-gray shadow */
     transition: all 0.3s ease;
   }
   
   .modern-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 16px 48px rgba(30, 41, 59, 0.15);
+    border-color: #0EA5A5; /* Accent Teal border on hover */
   }
 }
 
 .section-container {
   @apply w-full px-4 sm:px-6 lg:px-8 py-16 md:py-20;
-  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  background: linear-gradient(135deg, #FCFCFD 0%, #F8FAFC 100%);
 }
 
 .hover-lift {
