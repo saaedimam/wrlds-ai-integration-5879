@@ -8,6 +8,22 @@ This is a website for Kattali Textile Ltd. (KTL), a Bangladesh-based apparel man
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes (January 2025)
+
+### Color Palette Update
+- **Primary Red**: #8B0000 (Dark red)
+- **Accent Teal**: #0EA5A5  
+- **Secondary Yellow**: #FFB703
+- **Supporting Colors**: Rose (#F43F5E), Teal (#14B8A6), Amber (#F59E0B)
+- **Background**: #FCFCFD (Off-white), Paper (#F8FAFC), Text (#1E293B), Muted (#64748B), Border (#E2E8F0)
+- **Typography**: Inter font family from Google Fonts
+
+### Content Transformation
+- Completely removed all WRLDS branding and content
+- Replaced with KTL (Kattali Textile Ltd.) information
+- Updated contact details to hr@ktlbd.com
+- Modernized design with contemporary styling and glass morphism effects
+
 ## System Architecture
 
 ### Frontend Architecture
