@@ -60,7 +60,7 @@ const KTLAbout = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="modern-card p-8 hover:shadow-xl transition-all duration-300"
+              className="modern-card p-8 hover:shadow-xl transition-all duration-300 fx-press"
             >
               <div className="flex items-center justify-center w-16 h-16 bg-accent/10 rounded-lg mb-4 mx-auto">
                 {capability.icon}

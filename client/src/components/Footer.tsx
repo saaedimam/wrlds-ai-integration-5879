@@ -66,7 +66,7 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="bg-black text-white pt-16 pb-8 w-full">
+    <footer id="contact" className="pt-16 pb-8 w-full text-white" style={{ background: '#222' }}>
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-700">
           <div className="lg:col-span-2">
@@ -93,9 +93,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 text-white">Company</h3>
             <ul className="space-y-3">
-              <li><button onClick={() => window.scrollTo({ top: document.getElementById('about')?.offsetTop || 0, behavior: 'smooth' })} className="text-gray-300 hover:text-white transition-colors">About Us</button></li>
-              <li><Link to="/careers" className="text-gray-300 hover:text-white transition-colors">Careers</Link></li>
-              <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/careers" className="text-gray-300 hover:text-white transition-colors fx-inkUnderline" data-testid="footer-careers">Careers</Link></li>
+              <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors fx-inkUnderline" data-testid="footer-privacy">Privacy Policy</Link></li>
             </ul>
           </div>
           
