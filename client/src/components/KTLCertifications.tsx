@@ -24,7 +24,7 @@ const KTLCertifications = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            className="modern-card p-10 hover:shadow-xl transition-all duration-300"
           >
             <div className="flex items-center justify-center w-20 h-20 bg-primary/10 rounded-lg mb-6 mx-auto">
               <Award className="h-10 w-10 text-primary" />
@@ -48,7 +48,7 @@ const KTLCertifications = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            className="modern-card p-10 hover:shadow-xl transition-all duration-300"
           >
             <div className="flex items-center justify-center w-20 h-20 bg-accent/10 rounded-lg mb-6 mx-auto">
               <Shield className="h-10 w-10 text-accent" />

@@ -17,21 +17,21 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = 'WRLDS',
-  description = 'WRLDS Technologies: Pioneering smart engineering solutions with textile sensors for sports, safety, and performance monitoring.',
+  title = 'KTL',
+  description = 'Kattali Textile Ltd. (KTL): Bangladesh apparel manufacturer serving export buyers in Canada and USA. ISO 9001 & CTPAT certified.',
   type = 'website',
-  name = 'WRLDS Technologies',
+  name = 'Kattali Textile Ltd.',
   imageUrl = '/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png',
   publishDate,
   modifiedDate,
   author,
   category,
-  keywords = ['smart textiles', 'wearable technology', 'textile sensors', 'sports tech', 'safety monitoring', 'performance analytics'],
+  keywords = ['Bangladesh apparel manufacturing', 'textile manufacturer', 'garment production', 'ISO 9001', 'CTPAT', 'export manufacturing'],
   isBlogPost = false
 }) => {
   const [location] = useLocation();
-  const currentUrl = `https://wrlds.com${location}`;
-  const absoluteImageUrl = imageUrl.startsWith('http') ? imageUrl : `https://wrlds.com${imageUrl}`;
+  const currentUrl = `https://ktlbd.com${location}`;
+  const absoluteImageUrl = imageUrl.startsWith('http') ? imageUrl : `https://ktlbd.com${imageUrl}`;
 
   // Enhanced keywords for specific posts
   const enhancedKeywords = location.includes('smart-ppe-revolution') 
@@ -71,19 +71,20 @@ const SEO: React.FC<SEOProps> = ({
   const organizationStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'WRLDS Technologies',
-    url: 'https://wrlds.com',
-    logo: 'https://wrlds.com/lovable-uploads/14ea3fe0-19d6-425c-b95b-4117bc41f3ca.png',
-    description: 'Pioneering smart engineering solutions with textile sensors',
+    name: 'Kattali Textile Ltd.',
+    url: 'https://ktlbd.com',
+    logo: 'https://ktlbd.com/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png',
+    description: 'Bangladesh apparel manufacturer serving export buyers in Canada and USA with ISO 9001 & CTPAT certification',
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer service',
-      email: 'info@wrlds.com'
+      email: 'hr@ktlbd.com'
     },
-    sameAs: [
-      'https://www.linkedin.com/company/wrlds-technologies',
-      'https://twitter.com/wrldstechnologies'
-    ]
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'BD',
+      addressLocality: 'Chattogram'
+    }
   };
 
   // Enhanced BlogPosting JSON-LD structured data
@@ -105,19 +106,19 @@ const SEO: React.FC<SEOProps> = ({
     dateModified: modifiedDate || publishDate,
     author: {
       '@type': 'Organization',
-      name: author || 'WRLDS Technologies',
-      url: 'https://wrlds.com'
+      name: author || 'Kattali Textile Ltd.',
+      url: 'https://ktlbd.com'
     },
     publisher: {
       '@type': 'Organization',
-      name: 'WRLDS Technologies',
+      name: 'Kattali Textile Ltd.',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://wrlds.com/lovable-uploads/14ea3fe0-19d6-425c-b95b-4117bc41f3ca.png',
+        url: 'https://ktlbd.com/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png',
         width: 512,
         height: 512
       },
-      url: 'https://wrlds.com'
+      url: 'https://ktlbd.com'
     },
     description: description,
     keywords: enhancedKeywords.join(', '),
@@ -224,8 +225,8 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={absoluteImageUrl} />
-      <meta name="twitter:site" content="@wrldstechnologies" />
-      <meta name="twitter:creator" content="@wrldstechnologies" />
+      <meta name="twitter:site" content="@ktlbd" />
+      <meta name="twitter:creator" content="@ktlbd" />
       
       {/* LinkedIn specific */}
       <meta property="og:image:secure_url" content={absoluteImageUrl} />

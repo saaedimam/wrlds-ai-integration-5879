@@ -48,7 +48,7 @@ const KTLSustainability = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center"
+              className="modern-card p-8 hover:shadow-xl transition-all duration-300 text-center"
             >
               <div className="flex items-center justify-center w-16 h-16 bg-accent/10 rounded-lg mb-4 mx-auto">
                 {practice.icon}
