@@ -1,6 +1,6 @@
 
 import { ArrowLeft, CheckCircle, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import { motion } from "framer-motion";
 import { useEffect } from 'react';
 import PageLayout from '@/components/PageLayout';

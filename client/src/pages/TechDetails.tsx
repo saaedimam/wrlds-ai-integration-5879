@@ -1,6 +1,6 @@
 
 import { ArrowLeft, ArrowRight, FileText, Code, Cpu } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import { motion } from "framer-motion";
 import ProductPlatform from '@/components/ProductPlatform';
 import { useIsMobile } from '@/hooks/use-mobile';

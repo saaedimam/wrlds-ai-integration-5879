@@ -1,17 +1,17 @@
 
-import { useLocation } from "react-router-dom";
+import { useLocation } from "wouter";
 import { useEffect } from "react";
 import PageLayout from "@/components/PageLayout";
 
 const NotFound = () => {
-  const location = useLocation();
+  const [location] = useLocation();
 
   useEffect(() => {
     console.error(
       "404 Error: User attempted to access non-existent route:",
-      location.pathname
+      location
     );
-  }, [location.pathname]);
+  }, [location]);
 
   return (
     <PageLayout>

@@ -1,6 +1,6 @@
 
 import { ArrowRight, Linkedin } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "wouter";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from 'emailjs-com';

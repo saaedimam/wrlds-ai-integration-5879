@@ -1,7 +1,7 @@
 
 import PageLayout from '@/components/PageLayout';
 import { ArrowLeft, Mail, Linkedin, Phone } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import { motion } from "framer-motion";
 import { useEffect } from 'react';
 

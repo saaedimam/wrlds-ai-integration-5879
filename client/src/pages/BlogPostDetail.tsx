@@ -1,12 +1,12 @@
 
-import { useParams } from 'react-router-dom';
+import { useParams } from 'wouter';
 import { blogPosts } from '@/data/blogPosts';
 import PageLayout from '@/components/PageLayout';
 import SEO from '@/components/SEO';
 import EnhancedBlogContent from '@/components/EnhancedBlogContent';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Calendar, User } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 
 const BlogPostDetail = () => {
   const { slug } = useParams();

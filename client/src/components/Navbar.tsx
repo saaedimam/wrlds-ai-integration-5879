@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 
 const Navbar = () => {

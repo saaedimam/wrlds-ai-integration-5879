@@ -1,6 +1,6 @@
 import PageLayout from '@/components/PageLayout';
 import { ArrowLeft, Mail, MapPin, Clock, Users, Award, Target } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import { motion } from "framer-motion";
 import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';

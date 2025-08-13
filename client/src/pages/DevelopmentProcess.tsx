@@ -1,5 +1,5 @@
 import { ArrowLeft, CheckCircle, Clock, FileSearch, Settings, Cpu, Code, Truck, BarChart, Check } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import { useState, useRef, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import PageLayout from '@/components/PageLayout';

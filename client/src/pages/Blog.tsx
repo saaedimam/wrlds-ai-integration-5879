@@ -3,7 +3,7 @@ import PageLayout from '@/components/PageLayout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import SEO from '@/components/SEO';
 import BlogPostCard from '@/components/BlogPostCard';
 import { blogPosts } from '@/data/blogPosts';

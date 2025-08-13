@@ -1,7 +1,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import PageLayout from '@/components/PageLayout';
 import { useEffect } from 'react';
 

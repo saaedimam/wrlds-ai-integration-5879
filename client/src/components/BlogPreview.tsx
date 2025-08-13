@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import { ArrowRight, Newspaper } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import BlogPostCard from '@/components/BlogPostCard';

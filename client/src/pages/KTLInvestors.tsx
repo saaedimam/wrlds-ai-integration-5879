@@ -1,6 +1,6 @@
 import PageLayout from '@/components/PageLayout';
 import { ArrowLeft, FileText, Shield, Users, Factory, TrendingUp, AlertTriangle } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import { motion } from "framer-motion";
 import { useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';

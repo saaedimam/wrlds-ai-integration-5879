@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'wouter';
 
 interface SEOProps {
   title?: string;
@@ -29,12 +29,12 @@ const SEO: React.FC<SEOProps> = ({
   keywords = ['smart textiles', 'wearable technology', 'textile sensors', 'sports tech', 'safety monitoring', 'performance analytics'],
   isBlogPost = false
 }) => {
-  const location = useLocation();
-  const currentUrl = `https://wrlds.com${location.pathname}`;
+  const [location] = useLocation();
+  const currentUrl = `https://wrlds.com${location}`;
   const absoluteImageUrl = imageUrl.startsWith('http') ? imageUrl : `https://wrlds.com${imageUrl}`;
 
   // Enhanced keywords for specific posts
-  const enhancedKeywords = location.pathname.includes('smart-ppe-revolution') 
+  const enhancedKeywords = location.includes('smart-ppe-revolution') 
     ? [
         ...keywords,
         'personal protective equipment',
@@ -48,7 +48,7 @@ const SEO: React.FC<SEOProps> = ({
         'smart hard hats',
         'connected safety equipment'
       ]
-    : location.pathname.includes('wearable-safety-tech-protecting-workers-roi')
+    : location.includes('wearable-safety-tech-protecting-workers-roi')
     ? [
         ...keywords,
         'workplace injury costs',
@@ -127,7 +127,7 @@ const SEO: React.FC<SEOProps> = ({
   } : null;
 
   // Add FAQ structured data for Smart PPE post
-  const smartPPEFAQData = location.pathname.includes('smart-ppe-revolution') ? {
+  const smartPPEFAQData = location.includes('smart-ppe-revolution') ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: [
@@ -159,7 +159,7 @@ const SEO: React.FC<SEOProps> = ({
   } : null;
 
   // Add FAQ structured data for Wearable Safety Tech ROI post
-  const wearableSafetyROIFAQData = location.pathname.includes('wearable-safety-tech-protecting-workers-roi') ? {
+  const wearableSafetyROIFAQData = location.includes('wearable-safety-tech-protecting-workers-roi') ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: [

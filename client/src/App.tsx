@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Router, Route, Switch } from "wouter";
 import { useState } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -30,25 +30,25 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/projects/firecat" element={<FireCatProject />} />
-            <Route path="/projects/sport-retail" element={<SportRetailProject />} />
-            <Route path="/projects/workwear" element={<WorkwearProject />} />
-            <Route path="/projects/hockey" element={<HockeyProject />} />
-            <Route path="/projects/pet-tracker" element={<PetProject />} />
-            <Route path="/tech-details" element={<TechDetails />} />
-            <Route path="/development-process" element={<DevelopmentProcess />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/careers" element={<KTLCareers />} />
-            <Route path="/investors" element={<KTLInvestors />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogPostDetail />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
+        <Router>
+          <Switch>
+            <Route path="/" component={Index} />
+            <Route path="/projects/firecat" component={FireCatProject} />
+            <Route path="/projects/sport-retail" component={SportRetailProject} />
+            <Route path="/projects/workwear" component={WorkwearProject} />
+            <Route path="/projects/hockey" component={HockeyProject} />
+            <Route path="/projects/pet-tracker" component={PetProject} />
+            <Route path="/tech-details" component={TechDetails} />
+            <Route path="/development-process" component={DevelopmentProcess} />
+            <Route path="/about" component={About} />
+            <Route path="/careers" component={KTLCareers} />
+            <Route path="/investors" component={KTLInvestors} />
+            <Route path="/privacy-policy" component={PrivacyPolicy} />
+            <Route path="/blog" component={Blog} />
+            <Route path="/blog/:slug" component={BlogPostDetail} />
+            <Route component={NotFound} />
+          </Switch>
+        </Router>
       </TooltipProvider>
     </QueryClientProvider>
   );
